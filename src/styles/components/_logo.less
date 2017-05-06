@@ -1,0 +1,61 @@
+.logo {
+
+   &--btn {
+      text-align: right;
+   }
+
+   &__link {
+      display: inline-block;
+      font-family: @fontNative;
+      color: @colorLogoMain;
+      font-weight: 700;
+      font-size: 17px;
+      text-transform: uppercase;
+      line-height: @sizeLogo;
+      padding: 5px;
+      border: 5px solid @colorLogoMain;
+
+      &--modified {
+         color: @colorLogoSecond;
+         font-size: 21px;
+      }
+
+      &:focus,
+      &:hover {
+         text-decoration: none;
+         color: @colorLogoSecond;
+         border-color: @colorLogoSecond;
+      }
+
+      &:focus,
+      &:hover > .logo__link--modified {
+         color: @colorLogoMain;
+      }
+
+
+      &:active {
+         text-decoration: none;
+         color: @colorLogoMain;
+         border-color: @colorLogoMain;
+      }
+
+      &:active > .logo__link--modified {
+         color: @colorLogoSecond;
+      }
+   }
+
+   &__btn {
+      font-size: @sizeLogo;
+      padding: @sizeLogo/4;
+      color: @colorLogoIcon;
+
+      &:focus,
+      &:hover {
+         color: lighten(@colorLogoIcon, 15%);
+      }
+
+      &:active {
+         color: darken(@colorLogoIcon, 15%);
+      }
+   }
+}

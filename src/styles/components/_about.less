@@ -1,0 +1,54 @@
+.about {
+   background: #f8fafa;
+
+   &__head {
+      padding: 100px 0;
+      text-align: center;
+   }
+
+   &__slider {
+      padding-bottom: 150px;
+
+      &--list {
+         margin-bottom: -50px;
+         text-align: left;
+      }
+
+      &--ind {
+         background: #d0d0d0 !important;
+      }
+
+      &--control {
+         opacity: 0;
+
+         &:hover,
+         &:focus {
+            opacity: 0.1;
+         }
+      }
+   }
+
+   &__info {
+      padding: 0 60px 0 150px;
+   }
+
+   &__text {
+      font-family: @fontMerri;
+      font-size: 20px;
+      color: @colorLogoMain;
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: 1.3em;
+
+      &--small {
+         font-family: @fontRale;
+         font-size: 16px;
+         font-weight: 400;
+         text-transform: none;
+      }
+   }
+}
+
+.carousel-indicators .active {
+   background: #71f6eb !important;
+}

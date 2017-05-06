@@ -1,0 +1,61 @@
+.message {
+   padding: 30px 15px;
+
+   &__form,
+   &__text,
+   &__block {
+      font-family: @fontRale;
+      font-size: 15px;
+      font-weight: 300;
+      color: #fff;
+   }
+
+   &__text {
+      text-align: left !important;
+   }
+
+   &__block {
+      background: transparent;
+      border: none;
+
+      &:hover,
+      &:focus,
+      &:active {
+         box-shadow: none;
+      }
+   }
+
+   &__btn {
+      padding: 30px 0 0 15px;
+      text-align: left;
+   }
+
+   &__link {
+      display: inline-block;
+      font-family: @fontNative;
+      font-size: 18px;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: @colorLogoMain;
+      padding: 15px 30px;
+      background: @colorButton;
+      border-radius: 1px;
+
+      &:focus,
+      &:hover,
+      &:active {
+         text-decoration: none;
+      }
+
+      &:focus,
+      &:hover {
+         color: lighten(@colorLogoMain, 15%);
+         background: lighten(@colorButton, 15%);
+      }
+
+      &:active {
+         color: darken(@colorLogoMain, 15%);
+         background: darken(@colorButton, 15%);
+      }
+   }
+}

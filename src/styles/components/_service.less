@@ -1,0 +1,138 @@
+.service {
+   background: #f9fbfb;
+
+   &__head {
+      text-align: center;
+      padding: 100px 0;
+   }
+
+   &__form {
+      padding-bottom: 100px;
+   }
+
+   &__pic1,
+   &__pic2,
+   &__pic3,
+   &__pic4,
+   &__pic5,
+   &__pic6 {
+      padding-top: 20px;
+   }
+
+   &__pic1 {
+      background: #71f5ea;
+      background-clip: content-box;
+   }
+
+   &__pic2 {
+      background: linear-gradient(rgba(96, 96, 96, 0.6), rgba(96, 96, 96, 0.6)), url("/images/service1.jpg") no-repeat;
+      background-clip: content-box;
+      background-size: cover;
+   }
+
+   &__pic3 {
+      background: linear-gradient(rgba(96, 96, 96, 0.6), rgba(96, 96, 96, 0.6)), url("/images/service2.jpg") no-repeat;
+      background-clip: content-box;
+      background-size: cover;
+   }
+
+   &__pic4 {
+      background: linear-gradient(rgba(96, 96, 96, 0.6), rgba(96, 96, 96, 0.6)), url("/images/services3.jpg") no-repeat;
+      background-clip: content-box;
+      background-size: cover;
+   }
+
+   &__pic5 {
+      background: linear-gradient(rgba(96, 96, 96, 0.6), rgba(96, 96, 96, 0.6)), url("/images/service4.jpg") no-repeat;
+      background-clip: content-box;
+      background-size: cover;
+   }
+
+   &__pic6 {
+      background: linear-gradient(rgba(96, 96, 96, 0.6), rgba(96, 96, 96, 0.6)), url("/images/service5.jpg") no-repeat;
+      background-clip: content-box;
+      background-size: cover;
+   }
+
+   &__content,
+   &__btn,
+   &__content--first,
+   &__btn--first {
+      width: 80%;
+      padding: 28px;
+   }
+
+   &__content {
+      padding-top: 100px;
+   }
+
+   &__text {
+      font-family: @fontMerri;
+      font-size: 20px;
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.3em;
+      text-transform: uppercase;
+
+      &--small {
+         font-family: @fontRale;
+         font-size: 16px;
+         font-weight: 400;
+         color: #fff;
+         text-transform: none;
+      }
+
+      &--first {
+         font-family: @fontMerri;
+         font-size: 20px;
+         font-weight: 700;
+         color: @colorLogoMain;
+         text-transform: uppercase;
+         line-height: 1.3em;
+      }
+
+      &--smallFirst {
+         font-family:@fontRale;
+         font-size: 16px;
+         font-weight: 400;
+         text-transform: none;
+         color: @colorLogoMain;
+      }
+   }
+
+   &__link--first {
+      font-family:@fontRale;
+      font-size: 28px;
+      color: @colorLogoMain;
+
+      &:focus,
+      &:hover {
+         text-decoration: none;
+         color: lighten(@colorLogoMain, 15%);
+      }
+
+      &:active {
+         text-decoration: none;
+         color: @colorLogoMain;
+      }
+   }
+
+   &__link {
+      font-family: @fontRale;
+      font-size: 28px;
+      color: #f9fbfb;
+      text-transform: uppercase;
+
+      &:focus,
+      &:hover {
+         text-decoration: none;
+         color: lighten(#f9fbfb, 15%);
+         font-weight: 700;
+      }
+
+      &:active {
+         text-decoration: none;
+         color: darken(#f9fbfb, 15%);
+      }
+   }
+}

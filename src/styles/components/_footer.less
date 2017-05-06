@@ -1,0 +1,52 @@
+.footer {
+   background: #262b2e;
+   padding: 100px 0;
+
+   &__info {
+      text-align: center;
+   }
+
+   &__text {
+      font-family: @fontRale;
+      font-size: 16px;
+      font-weight: 400;
+      color: #fff;
+      text-transform: uppercase;
+
+      &--low {
+         color: @colorFooter;
+         text-transform: capitalize;
+      }
+   }
+
+   &__icon {
+      padding-bottom: 20px;
+   }
+
+   &__link {
+      display: inline-block;
+      font-size: 22px;
+      padding: 9px 0;
+      margin: 3px;
+      width: 55px;
+      color: @colorFooter;
+      background: #3f4244;
+
+      &:focus,
+      &:hover,
+      &:active {
+         text-decoration: none;
+      }
+
+      &:focus,
+      &:hover {
+         color: @colorLogoMain;
+         background: @colorButton;
+      }
+
+      &:active {
+         color: lighten(@colorLogoMain, 15%);
+         background: lighten(@colorButton, 15%);
+      }
+   }
+}

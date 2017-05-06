@@ -1,0 +1,66 @@
+.header {
+   background: #eff0f2;
+   width: 100%;
+   display: inline-block;
+   position: relative;
+
+   &__logo {
+      padding: 50px 0;
+   }
+
+   &__name {
+      padding: 100px 0;
+      text-align: center;
+   }
+
+   &__text {
+      font-family: @fontNative;
+      font-size: 45px;
+      font-weight: 700;
+      line-height: 1.5em;
+      color: #505050;
+      text-transform: uppercase;
+      text-shadow: 5px 5px 20px;
+
+      &--modified {
+         background-color: #b2f2ee;
+      }
+   }
+
+   &__btn {
+      text-align: center;
+      padding-bottom: 150px;
+   }
+
+   &__link {
+      font-family: @fontNative;
+      font-size: 18px;
+      color: @colorLogoMain;
+      border: 2px solid @colorLogoMain;
+      border-radius: 1px;
+      padding: 15px 45px;
+
+      &:focus,
+      &:hover {
+         text-decoration: none;
+         color: #fff;
+         background-color: @colorLogoMain;
+      }
+
+      &:active {
+         background-color: lighten(@colorLogoMain, 15%);
+         border-color: lighten(@colorLogoMain, 15%);
+      }
+   }
+
+   &__img {
+      display: inline-block;
+      position: absolute;
+      bottom: 10%;
+      right: 15%;
+   }
+
+   &__pic {
+
+   }
+}

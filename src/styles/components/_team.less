@@ -1,0 +1,89 @@
+.team {
+
+   &__head {
+      text-align: center;
+      padding: 100px 0;
+   }
+
+   &__form {
+      padding-bottom: 100px;
+   }
+
+   &__pic {
+      padding-top: 20px;
+      text-align: center;
+   }
+
+   &__img {
+      display: inline-block;
+      position: relative;
+   }
+
+   &__item,
+   &__message,
+   &__text {
+      display: none;
+      width: 90%;
+      position: absolute;
+      bottom: 0;
+      left: 5%;
+   }
+
+   &__text {
+      font-family: @fontMerri;
+      font-size: 20px;
+      font-weight: 700;
+      color: @colorLogoMain;
+      text-transform: uppercase;
+      padding-bottom: 50px;
+      margin: 0;
+
+      &--modified {
+         font-size: 15px;
+         font-weight: 400;
+         color: #767070;
+         text-transform: none;
+      }
+
+      &--small {
+         display: inline-block;
+         text-align: left;
+         font-family: @fontRale;
+         font-size: 16px;
+         font-weight: 400;
+         color: @colorLogoMain;
+         line-height: 1.5em;
+         text-transform: none;
+      }
+   }
+
+   &__link {
+      display: inline-block;
+      font-family: @fontRale;
+      font-size: 16px;
+      font-weight: 400;
+      color: @colorLogoMain;
+      margin-right: 10px;
+
+      &:focus,
+      &:hover {
+         color: #fff;
+      }
+
+      &:active {
+         color: darken(#fff, 50%);
+      }
+   }
+}
+
+.team__pic--special:hover > .team__item {
+   display: inline-block;
+}
+
+.team__pic--special:hover > .team__item > .team__message {
+   display: inline-block;
+}
+
+.team__pic--special:hover > .team__item > .team__message > .team__text {
+   display: inline-block;
+}
